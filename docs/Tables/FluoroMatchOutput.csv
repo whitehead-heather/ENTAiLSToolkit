@@ -1,0 +1,10 @@
+﻿Column name in results,Utility
+Score,FluoroMatch result. A score given by FluoroMatch using their developed scoring system. See the following publication for more information: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10228292/
+Name_or_class,FluoroMatch result. Defines the class or individual chemical name that a feature was annotated to. This cell may or may not be filled if an annotation was made.
+Formula,FluoroMatch result. Gives the chemical formula for the chemical that a feature was annotated to. This cell is always filled if an annotation was made.
+SMILES,FluoroMatch result. Gives the SMILES string that defines the structure and linkages of atoms in the chemical formula for the chemical that a feature was annotated to. This cell may or may not be filled if an annotation was made. 
+m/z,Provided in input file by user.
+Retention Time,Provided in input file by user.
+Adduct,FluoroMatch result. Gives the adduct form measured for the chemical that a feature was annotated too. This cell is always filled if an annotation was made. 
+Score_description,FluoroMatch result. Gives the Schymanski Scale Confidence Level that each feature is at based on FluoroMatch annotations.
+Feature ID,Provided in input file by user.

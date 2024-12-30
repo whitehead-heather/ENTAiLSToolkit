@@ -1,0 +1,15 @@
+﻿Option/Filter,Value
+Output format,mzXML
+Binary encoding precision,64-bit
+"Write index, zlib compression, TPP compatibility",Selected
+Peak Picking MS Level,1 - 
+MS Level Subset,1 -
+Number of Data Points Subset,2 -
+Polarity Subset,Negative
+Output format,ms2
+Binary encoding precision,64-bit
+"Write index, zlib compression, TPP compatibility",Selected
+Peak Picking MS Level,2-2
+MS Level Subset,2-2
+Number of Data Points Subset,2 -
+Polarity Subset,Negative

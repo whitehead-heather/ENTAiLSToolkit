@@ -1,0 +1,38 @@
+﻿Option/Filter,Value
+SIRIUS – Molecular formula identification,
+Instrument,Orbitrap
+Filter by isotope pattern,Selected
+MS2 mass accuracy (ppm),5
+MS/MS isotope scorer,Ignore
+Candidates stored,10
+Min candidates per ion stored,1
+Use heuristic above m/z,300
+Use heuristic only above m/z,650
+Possible ionization,[M-H]-
+Elements allowed:,
+H,0 - inf
+,
+C,0 - inf
+N,0 - 5
+O,0 - inf
+P,0 - 1
+S,0 - 3
+Cl,0 -5
+Br,0 - 1
+I,0 - 1
+F,0 - inf
+Formula prediction excluded for high MW compounds,
+ZODIAC – Network-based improvement of molecular formula ranking,
+Considered candidates 300 m/z,10
+Considered candidates 800 m/z,50
+Use 2-step approach,Selected
+Edge Filters: Edge threshold,0.95
+Edge Filters: Min local connections,10
+Gibbs Sampling: Iterations,"20,000"
+Gibbs Sampling: Burn-in,"2,000"
+Gibbs Sampling: Separate runs,10
+CSI:FingerID – Fingerprint Prediction & Structure Database Search,
+Fallback adducts,[M-H]-
+Search databases,PubChem
+CANOPUS – Compound Class Prediction,
+No parameters to set,

@@ -1,0 +1,6 @@
+﻿,Targeted,Non-Targeted
+Chemicals Measured,"Small, pre-defined lists (100s) of known chemicals",Large & open-ended including knowns and unknowns
+Usage,Authoritative for known analytes in specific matrices,Exploratory for unknown analytes and/or matrices
+Reference Data ,"Available, experimental/empirical","Limited, sometimes predicted"
+Methods,"Harmonized, well characterized, and transparent","Varied, under-characterized, and opaque"
+Results,Reproducible and defensible,Need expert interpretation

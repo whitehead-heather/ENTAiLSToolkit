@@ -1,0 +1,33 @@
+﻿Correlation grouping,,
+,RT tolerance (absolute),0.1 min
+,Minimum feature height,0
+,Intensity threshold for correlation,0
+,Minimum samples filter: min samples in all,Max of 1 sample or 10%
+,Minimum samples filter: min samples in group,Max of 0 samples or 0%
+,Minimum samples filter: min %-intensity overlap,60%
+,Feature shape correlation,Unselected
+,Feature height correlation: minimum samples,2
+,Feature height correlation: measure,Pearson
+,Feature height correlation: min correlation,70%
+Ion identity networking,,
+,m/z tolerance (intra-sample),0.002 m/z or 10 ppm
+,Check,Average
+,Min height,0
+,Ion identity library: MS mode,Negative
+,Ion identity library: maximum charge,2
+,Ion identity library: maximum molecules/cluster,3
+,Ion identity library: adducts,"[M]-, [M-H]-, [M+Na]-, [M+Cl]-, [M+FA]-"
+,Ion identity library: modifications,"[M-H2O], [M-NH3], [M-CO], [M-CO2]"
+,Annotation refinement: minimum size,2
+,Annotation refinement: delete small networks without major ion,Selected
+,Annotation refinement: delete networks without monomer,Selected
+MS/MS spectral networking,,
+,m/z tolerance (MS2),0.002 m/z or 10 ppm
+,Only best MS2 scan,Selected
+,Minimum matched signals,3
+,Min cosine similarity,0.8
+,Check MS2 neutral loss similarity: maximum DP for differences matching,25
+,Signal filters: remove residual precursor m/z,10
+,Signal filters: Crop to top N signals,250
+,Signal filters: signal threshold,50
+,Signal filters: intensity filter at >N signals,98

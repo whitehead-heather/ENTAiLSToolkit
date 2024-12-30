@@ -1,0 +1,15 @@
+﻿Order,Parameter,Purpose or use ,Default value
+1,Input data folder,Navigate to the input folder location ,
+2,FluoroMatch libraries folder,Navigate to the location of the FluoroMatch libraries included in the FluoroMatch download ,\\FluoroMatch-2.6\\FluoroMatch_Modular\\FluoroMatch_Libraries
+3,Retention time tolerance (in minutes),For pairing MS2 data to features in the MS1 feature list.,0.1 minutes
+4,Mass tolerance window (in ppm),For matching MS2 fragments to those in FluoroMatch libraries,10 ppm
+5,Mass tolerance window (in Da),For matching MS1 precursor masses to those in FluoroMatch libraries,0.01 Da
+6,MS/MS isolation window (in Da),To tie MS2 data to features in the MS1 feature list,0.4 Da
+7,Minimum signal intensity,Threshold for the minimal signal intensity of MS2 fragments,10
+8,Comment column,Used to identify the corresponding column (by column number) in the input peak list that contains the unique identifier,
+9,m/z column,Used to identify the corresponding column (by column number) in the input peak list that contains m/z values,
+10,Retention time column,Used to identify the corresponding column (by column number) in the input peak list that contains retention time values,
+11,Row start,Used to identify the first row (by row number) in the input peak list that contains numeric peak areas of features across samples,
+12,Upper limit mass defect filtering,To identify the upper-end limit on mass defect of features for scoring,0.12
+13,Lower limit mass defect filtering,To identify the lower-end limit on mass defect of features for scoring,-0.11
+14,Minimum number of scans,Threshold for the minimum number of scans needed in the MS2 data for a feature to be annotated with a library feature,1

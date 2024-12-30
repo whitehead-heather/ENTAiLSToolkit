@@ -1,0 +1,78 @@
+﻿MZMine module,Module parameter,Threshold or value used
+Crop Filtering,,
+,MS Level,All
+,RT range,1.0 - 12 min
+,Filter out empty scans,Selected
+Mass Detection,,
+,MS Level,1
+,RT range,1.0 - 12 min
+,Mass detector,Centroid
+,Nosie threshold,1.00E+03
+,Detect isotope signals below noise level,Selected
+Mass Detection,,
+,Mass Level,2
+,RT range,1.0 - 12 min
+,Mass detector,Centroid
+,Noise threshold,1.00E+02
+ADAP Chromatogram Building,,
+,MS Level,1
+,RT range,1.0 - 12 min
+,Minimum consecutive scans,1
+,Minimum intensity for consecutive scans,1.00E+02
+,Minimum absolute height,1.00E+03
+,m/z tolerance,0.002 m/z or 10 ppm
+Chromatogram Resolving,,
+,Algorithm,Local minimum
+,MS/MS scan pairing,Selected
+,MS/MS scan pairing: MS1 to MS2 precursor tolerance,0.002 m/z or 10 ppm
+,MS/MS scan pairing: Retention time filter,Use tolerance of 0.2 min
+,MS/MS scan pairing: Minimum required signals,1
+,Dimension,Retention time
+,Chromatographic threshold,90%
+,Minimum search range RT (absolute),0.05
+,Minimum relative height,0%
+,Minimum absolute height,1.00E+03
+,Min ratio of peak top/edge,1.7
+,Peak Duration Range,0.01-0.5
+,Minimum scans (data points),3
+13C Isotope Filter,,
+,m/z tolerance,0.002 m/z or 10 ppm
+,Retention time tolerance,0.5 min
+,Maximum charge,1
+,Require monoisotopic shape,Selected
+,Representative isotope,Most intense
+Isotope Pattern Finder,,
+,Chemical elements,"H, C, N, O, S"
+,m/z tolerance (feature-to-scan),0.0005 m/z or 10 ppm
+,Maximum charge,1
+Alignment,,
+,m/z tolerance,0.002 m/z or 10 ppm
+,Weight for m/z,20
+,Retention time tolerance,0.5 min
+,Weight for RT,10
+Gap-filling,,
+,Intensity tolerance,10%
+,m/z tolerance,0.002 m/z or 10 ppm
+,Retention time tolerance,0.5 min
+,Minimum scans (data points),1
+Duplicate Peak Filter,,
+,Filter mode,New Average
+,m/z tolerance,0.002 m/z or 10 ppm
+,Retention time tolerance,0.5 min
+Local compound database search,,
+,Database file,PFASStructPrecursorForMZmine
+,Columns,"Name, mz, comment"
+,Mz tolerance,0.002 m/z or 10 ppm
+,Retention time tolerance,10 mins
+Spectral library search,,
+,Imported spectral libraries,AMOS ESI-
+,,PFAS single spectra
+,Scans for matching,MS2 (all scans)
+,Precursor m/z tolerance,0.002 m/z or 10 ppm
+,Spectral m/z tolerance,0.002 m/z or 10 ppm
+,Remove precursor,Unselected
+,Minimum matched signals,2
+,Similarity,Weighted cosine similarity
+,Similarity: Weights,MassBank
+,Similarity: Minimum cos similarity,0.7
+,Similarity: Handle unmatched signals,Keep all and match to zero

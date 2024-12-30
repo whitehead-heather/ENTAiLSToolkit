@@ -1,0 +1,66 @@
+﻿Module parameter,Threshold or value used
+MS Level,All
+RT (min),1.0 - 12.0
+Filter out empty scans,Selected
+MS Level,1
+RT (min),1.0 - 12.0
+Mass detector,Centroid
+Nosie threshold,1.00E+03
+Detect isotope signals below noise level,Selected
+Mass Level,2
+RT,1.0 - 12.0
+Mass detector,Centroid
+Noise threshold,1.00E+02
+MS Level,1
+RT,1.0 - 12.0
+Minimum consecutive scans,1
+Minimum intensity for consecutive scans,1.00E+02
+Minimum absolute height,1.00E+03
+m/z tolerance,0.002 m/z or 10 ppm
+Algorithm,Local minimum
+MS/MS scan pairing,Selected
+MS/MS scan pairing: MS1 to MS2 precursor tolerance ,0.002 m/z or 10 ppm
+MS/MS scan pairing: Retention time filter ,Use tolerance of 0.2 min
+MS/MS scan pairing: Minimum relative feature height,25%
+MS/MS scan pairing: Minimum required signals,1
+Dimension,Retention time
+Chromatographic threshold,90%
+"Minimum search range RT (absolute, min)",0.05
+Minimum relative height,0%
+Minimum absolute height,1.00E+03
+Min ratio of peak top/edge,1.7
+Peak Duration Range (min),0.01-0.5
+Minimum scans (data points),3
+m/z tolerance,0.002 m/z or 10 ppm
+Retention time tolerance (min),0.5
+Maximum charge,1
+Require monoisotopic shape,Selected
+Representative isotope,Most intense
+Chemical elements,"H, C, N, O, S"
+m/z tolerance (feature-to-scan),0.0005 m/z or 10 ppm
+Maximum charge,1
+m/z tolerance,0.002 m/z or 10 ppm
+Weight for m/z,20
+Retention time tolerance (min),0.5
+Weight for RT,10
+Intensity tolerance,10%
+m/z tolerance,0.002 m/z or 10 ppm
+Retention time tolerance (min),0.5
+Minimum scans (data points),1
+Filter mode,New Average
+m/z tolerance,0.002 m/z or 10 ppm
+Retention time tolerance (min),0.5
+Database file,PFASStructPrecursorForMZmine
+Columns,"Name, mz, comment"
+m/z tolerance,0.002 m/z or 10 ppm
+Retention time tolerance (min),10
+Imported spectral libraries,AMOS ESI-
+Scans for matching,MS2 (all scans)
+Precursor m/z tolerance,0.002 m/z or 10 ppm
+Spectral m/z tolerance,0.002 m/z or 10 ppm
+Remove precursor,Unselected
+Minimum matched signals,1
+Similarity,Weighted cosine similarity
+Similarity: Weights,MassBank
+Similarity: Minimum cos similarity,0.7
+Similarity: Handle unmatched signals,Keep all and match to zero

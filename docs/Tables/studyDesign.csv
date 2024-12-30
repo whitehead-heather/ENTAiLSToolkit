@@ -1,0 +1,6 @@
+﻿#,Study Scope,Study Design Considerations,Basic Statistics,Higher-level Statistics,Modeling Required
+1,Determine the presence of chemicals of concern,"Collection, preparation, and acquisition of fundamental QA/QC samples ",,,
+2,Investigate origin and impact of specific point sources,Selection of a background/control and minimizing differences in upstream and downstream samples. Requires metadata that describes the point source processes or expected impacts ,X,,
+3,"Measure the distribution of chemicals across time, space, and/or matrices (e.g., water, soil, plants, animals, people)","Development of matrix-specific controls and the use of controls to minimize differences across time. Requires metadata that describes the variables examined and their relationship to one another (e.g., hydrogeology of sites studied, changes or differences to study locations over time)",X,X,
+4,Estimate or model the fate and transport of pollutants,Application of experimental and/or predicted transformation pathways to support investigation. Use of modeling approaches to support analysis of hypotheses. Requires metadata to support proposed pathways and modeling ,X,X,X
+5,Establish the association of chemicals with other factors,Linking of NTA data to other reference or measurement data to investigate hypotheses,X,X,X
