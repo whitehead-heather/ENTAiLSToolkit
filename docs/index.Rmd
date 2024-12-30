@@ -1968,4 +1968,4 @@ The contents of this toolkit were developed throughout the ROAR collaboration be
 
 
 ## Contact
-For any questions or comments on the toolkit content or the ROAR project please reach out to **Heather Whitehead** at **whitehead.heather@epa.gov.** 
+For any questions or comments on the toolkit content or the ROAR project please reach out to **Heather Whitehead** at **whitehead.heather@epa.gov** or **James McCord** at **mccord.james@epa.gov**. 
