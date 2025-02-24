@@ -1,5 +1,5 @@
 ﻿Input,Description,Default value
-Project name:,Open text field input. This should be a unique name for each new WebApp run,NA
+Project name:,Open text field input. This should be a unique name for each new INTERPRET NTA run,NA
 Positive mode file ,"""Choose file"" button that opens dialog box to direct to a file location. Input file needs to be a .csv file type. Input file here should be for any positive mode detection matrix. Mandatory file",NA
 Negative mode file ,"""Choose file"" button that opens dialog box to direct to a file location. Input file needs to be a .csv file type. Input file here should be for any negative mode detection matrix. Mandatory file",NA
 Positive mode adducts:,"Selection boxes that allows users to select which adduct forms should be searched for in features in the detection matrix. Possible adduct forms are [M+Na]+, [M+NH4]+, [M+K]+",
