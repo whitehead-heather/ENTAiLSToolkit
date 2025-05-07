@@ -111,7 +111,7 @@ The limits of chemical space for an NTA method are useful to differentiate when 
 
 ```{r, echo=FALSE, out.width="100%", fig.cap="**Figure 6.**Analytical techniques used to measure PFAS. Boxes represent the relative narrowing of chemical space from total fluorine techniques like PIGE to targeted LC-MS/MS measurements. Image taken from [McDonough *et al*. (2019)](https://www.sciencedirect.com/science/article/pii/S2468584418300515)."}
 
-knitr::include_graphics("Figures/Techniques.png")
+knitr::include_graphics("Figures/Techniques.jpg")
 ```
 
 There are a variety of techniques that seek to measure total fluorine or total organic fluorine including Particle-Induced Gamma-Ray Emission (PIGE) spectroscopy, Combustion Ion Chromatography (CIC), and Fluorine-19 Nuclear Magnetic Resonance (NMR) spectroscopy. These techniques offer the best estimation of all PFAS present in a sample, including both polymeric and non-polymeric forms, though these methods are unable to describe the individual chemical(s) present. A combination of analytical techniques is often utilized to measure both total fluorine and individual PFAS in order to identify and close a fluorine mass balance within a system.   
@@ -497,7 +497,7 @@ When using QTOF or Orbitrap mass spectrometers the Q3 filtering step can return 
 knitr::include_graphics("Figures/NTAScans.png")
 ```
 
-#### Data-Depdendent Acquisition (DDA)
+#### Data-Dependent Acquisition (DDA)
 
 Data-dependent acquisition (DDA, sometimes “information dependent acquisition” - IDA) uses successive scan and reaction monitoring steps to collect both MS1 (precursor ion) and MS2 (fragment ion) information such that both MS and MS/MS scans are interwoven. The general process for DDA is:
 
@@ -519,7 +519,7 @@ Specific parameters that can be optimized to control DDA efficiency include:
 > **Mass Width of Exclusion**: Ignore precursor masses within a certain mass window (e.g., select only monoisotopic precursor mass).   
 > **Targeted Inclusion / Exclusion**: Target or exclude specific masses from selection (e.g., Always collect data from high priority PFAS ions, regardless of abundance; ignore known background ions).  
 
-One approach to improve coverage while having a limited number of MS2 scans is to use iterative DDA methods. This method records the precursor ions selected for MS2 in a single injection and excludes those precursor ions for selection in the next injection, allowing the number of precursor ions selected for fragmentation to increase with each successive injection. Some instrument control software offers built-in iterative DDA acquisition methods including the [vendor-neutral IonDecon software](https://innovativeomics.com/software/iondecon/) produced by Innovative Omics. The data processing workflow described here is applicable to DDA-style data and is the preferred data type for this workflow. 
+One approach to improve coverage while having a limited number of MS2 scans is to use iterative DDA methods. This method records the precursor ions selected for MS2 in a single injection and excludes those precursor ions for selection in the next injection, allowing the number of precursor ions selected for fragmentation to increase with each successive injection. Some instrument control software offers built-in iterative DDA acquisition methods including vendor-neutral [IE-Omics](https://innovativeomics.com/software/ie-omics/) for acquisition and [IonDecon software](https://innovativeomics.com/software/iondecon/) for data processing of IE data, both produced by Innovative Omics. The data processing workflow described here is applicable to DDA-style data and is the preferred data type for this workflow. 
 
 #### Data-Independent acquisition
 
@@ -625,6 +625,8 @@ knitr::include_graphics("Figures/MSConvertRunning.png")
 ```
 
 ##### Final things to know:
+
+* Different vendor data files may require additional filters or modifications to the filters not described here. Please reach out using our [Contact] if you run into issues during conversion. 
 
 * These parameters have been tested and work well with DDA-acquired HRMS data collected in Centroid mode. Additional filters or adjustments to the filters here may be necessary when working with DIA or with Profile mode data.
 
@@ -1099,7 +1101,7 @@ INTERPRET NTA is currently hosted on a password protected web page with access l
 
 
 #### INTERPRET NTA Logic 
-INTERPRET NTA was designed, in part, to improve the performance and reporting of QA/QC procedures in NTA studies. Guiding principles include: 1) following the most current QA/QC recommendations of the international research community; 2) providing practitioners an interactive means to visually inspect their data; and 3) equipping QA/QC managers to efficiently review and document study quality. Fundamental logic of MS1 feature review is encapsulated in four steps (**Figure 33**).
+INTERPRET NTA was designed, in part, to improve the performance and reporting of QA/QC procedures in NTA studies. Guiding principles include: 1) following the most current QA/QC recommendations of the international research community; 2) providing practitioners an interactive means to visually inspect their data; and 3) equipping QA/QC managers to efficiently review and document study quality. Fundamental logic of MS1 feature review is encapsulated in four steps (**Figure 33**). For more detailed information on INTERPRET NTA's background, use, logic, and outputs please visit our [INTERPRET NTA User Guide](https://whitehead-heather.github.io/INTERPRETNTA/). 
 
 ```{r, echo=FALSE, out.width="100%", fig.cap="**Figure 33.** Key INTERPRET NTA QA/QC processing steps demonstrated on five MS1 features measured in one method blank (red x-axis) and three sample replicates (black x-axes). Major QA/QC filtering decisions are shown throughout steps 1-4. The red shaded feature denotes a spiked “tracer” analyte."}
 knitr::include_graphics("Figures/logic.png")
@@ -1275,10 +1277,11 @@ FluoroMatch is a third-party, open source software that can be used to provide P
 <div class="alert alert-success" role="alert">
 **Relevant publications:**  
 Koelmel, J.P., Stelben, P., McDonough, C.A. *et al*. FluoroMatch 2.0—making automated and comprehensive non-targeted PFAS annotation a reality. *Anal Bioanal Chem* **414**, 1201–1215 (2022). https://doi.org/10.1007/s00216-021-03392-7  
-
+  
 Koelmel, J. P., *et al*. Toward Comprehensive Per- and Polyfluoroalkyl Substances Annotation Using FluoroMatch Software and Intelligent High-Resolution Tandem Mass Spectrometry Acquisition. *Analytical Chemistry* **92(16)**, 11186-11194 (2020).
 	
-Koelmel, J. P., *et al*. Interactive software for visualization of nontargeted mass spectrometry data—FluoroMatch visualizer. **Exposome** **2(1)** (2022). </div>
+Koelmel, J. P., *et al*. Interactive software for visualization of nontargeted mass spectrometry data—FluoroMatch visualizer. **Exposome** **2(1)** (2022).  
+</div>
 
 In this protocol, only FluoroMatch Modular is used, with INTERPRET NTA filtered feature lists as input. FluoroMatch Modular contains functional elements of FluoroMatch that run as scripts rather than through the FluoroMatch graphical interface.   
 
@@ -1546,22 +1549,22 @@ knitr::include_graphics("Figures/ms2.png")
 >  * Peaks separated by a m/z of ~49.9968 Da due to loss of CF2.  
 >     * Applies to increasing CF2 units (e.g. C2F4, C3F6…)  
 >  * Commonly observed carbon-fluorine fragments that can be compared to the proposed structure: 
->     *	CF3 at 68.9952 Da  
->     * C2F5 at 118.9920 Da  
->     * C3F7 at 168.9888 Da  
->     * C4F9 at 218.9856 Da  
->     * C5F11 at 268.9824 Da  
->     * C6F13 at 318.9792 Da  
->     * C7F15 at 368.9760 Da  
+>     *	CF~3~ at 68.9952 Da  
+>     * C~2~F~5~ at 118.9920 Da  
+>     * C~3~F~7~ at 168.9888 Da  
+>     * C~4~F~9~ at 218.9856 Da  
+>     * C~5~F~11~ at 268.9824 Da  
+>     * C~6~F~13~ at 318.9792 Da  
+>     * C~7~F~15~ at 368.9760 Da  
 >
 >  &nbsp; 
 >
 > *Features with a suspected sulfonic acid group are likely to show these fragments*:  
 >
->  * SO3 at 79.9568 Da  
->  * SO3H at 80.9646 Da  
->  * SO3F at 98.9552 Da  
->  * SO2 at 63.9620 Da
+>  * SO~3~ at 79.9568 Da  
+>  * SO~3~H at 80.9646 Da  
+>  * SO~3~F at 98.9552 Da  
+>  * SO~2~ at 63.9620 Da
 >  * **Note:** Perfluorinated linear sulfonic acid PFAS rarely produce the carbon-fluorine backbone fragments described above.  
 >
 >  &nbsp;
@@ -1575,7 +1578,21 @@ knitr::include_graphics("Figures/ms2.png")
 >
 > *Features with carboxylic acids in their proposed structure can show loss of CO2 from precursor ion.*  
 >
-> * Appears as a peak at [M-H-CO2]- with CO2 equal to [M-H-43.98989 Da].
+> * Appears as a peak at [M-H-CO~2~]- with CO2 equal to [M-H-43.98989 Da].
+>
+>  &nbsp;
+>
+> *Features with sulfonamides in their proposed structure can show specific fragments.*
+>
+> * NO~2~S at 77.9649 Da
+>
+>  &nbsp;
+>
+> *Ether-containing species can show fragments of the carbon fluorine backbone with an additional oxygen.*
+>
+> * CF~3~O at 84.9901 Da
+> * C~2~F~5~O at 134.9869 Da
+> * And additional fragments using the structure C~n~F~(2n+1)~O
 
 Use information from the annotation tools to aide in the review of MS2 spectra. These include: 
 
@@ -1722,8 +1739,8 @@ knitr::include_graphics("Figures/featureTable.png")
 
 The dataset should contain at minimum:  
 
-1. A unique (set) of identifiers for the feature, which may include identifiers for both the feature table and earlier raw tables for programs such as FluoroMatch or mzmine.  
-2. An assigned annotation and confidence score, with the option to provide the supporting rationale (e.g., observed fragments, homologous series information) in notes or with additional annotation columns.  
+1. A unique (set) of identifiers for the feature, which may include identifiers for both the feature table and earlier raw tables for programs such as FluoroMatch or mzmine. PFAS identified in homologous series can also be given unique homologous series IDs to quickly identify the individual series identified. 
+2. An assigned annotation and confidence score, with the option to provide the supporting rationale (e.g., observed fragments, homologous series information) in notes or with additional annotation columns. 
 3. Measurement data for each sample and feature, which may be corrected, background subtracted, averaged across replicates, etc.  
 
 The feature table may also optionally link to additional metadata tables, such as additional potential assignments from library hits.  
