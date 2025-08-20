@@ -1,4 +1,4 @@
 ---
 layout: forward
-target: https://mccord-dev.github.io/ENTAiLSToolkit/
+target: https://mccord-dev.github.io/INTERPRETNTA/
 ---
