@@ -1,4 +1,13 @@
 ---
-layout: forward
-target: https://mccord-dev.github.io/INTERPRETNTA/
+title: "<span style=color:#2da343>ENTA</span>i<span style=color:#2da343>LS</span> Toolkit: <span style=color:#2da343>E</span>nabling <span style=color:#2da343>N</span>on-<span style=color:#2da343>T</span>argeted <span style=color:#2da343>A</span>na<span style=color:#2da343>L</span>ysi<span style=color:#2da343>S</span> for Per- and Polyfluoroalkyl Substances"
+
+output: 
+  rmdformats::readthedown:
+    toc_depth: 4
+    toc_float: true # always visible on the left
+    collapsed: false # sub-section are displayed
+    css: customStyle.css
 ---
+<script type="text/javascript">
+  window.location.href = "https://mccord-dev.github.io/ENTAiLSToolkit/";
+</script>
